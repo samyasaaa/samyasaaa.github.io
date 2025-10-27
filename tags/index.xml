@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Huabing Blog</title>
-    <link>http://localhost:1313/tags/</link>
-    <description>Recent content in Tags on Huabing Blog</description>
+    <title>Tags on SAGElab</title>
+    <link>https://samyasaaa.github.io/tags/</link>
+    <description>Recent content in Tags on SAGElab</description>
     <generator>Hugo</generator>
     <language>zh-us</language>
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://samyasaaa.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

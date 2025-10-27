@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>研究项目 on SAGElab</title>
+    <link>https://samyasaaa.github.io/research/</link>
+    <description>Recent content in 研究项目 on SAGElab</description>
+    <generator>Hugo</generator>
+    <language>zh-us</language>
+    <lastBuildDate>Mon, 15 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://samyasaaa.github.io/research/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI视觉检测机器人</title>
+      <link>https://samyasaaa.github.io/research/ai-vision-inspection-robot/</link>
+      <pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://samyasaaa.github.io/research/ai-vision-inspection-robot/</guid>
+      <description>&lt;h2 id=&#34;项目概述&#34;&gt;项目概述&lt;/h2&gt;&#xA;&lt;p&gt;AI视觉检测机器人是一款高效的智能检测系统，专注于三维尺寸测量与表面缺陷检测。该机器人能够通过AI技术实现精确的自动识别与分类。&lt;/p&gt;&#xA;&lt;h2 id=&#34;技术特点&#34;&gt;技术特点&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;高精度检测&lt;/strong&gt;: 采用先进的计算机视觉算法，检测精度达到微米级&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;自适应学习&lt;/strong&gt;: 基于深度学习的模型能够不断优化检测准确率&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;模块化设计&lt;/strong&gt;: 可根据不同检测目标快速调整工作模式&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;实时反馈&lt;/strong&gt;: 提供实时的质量检测数据和报告生成&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;应用场景&#34;&gt;应用场景&lt;/h2&gt;&#xA;&lt;h3 id=&#34;工业制造&#34;&gt;工业制造&lt;/h3&gt;&#xA;&lt;p&gt;适用于金属加工、焊接和生产线的质量控制需求，能够检测表面缺陷、尺寸偏差等问题。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

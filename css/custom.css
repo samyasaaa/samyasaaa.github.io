@@ -51,12 +51,16 @@ body:not(.home) .navbar .navbar-brand {
         margin: 0;
     }
     
+/* 修复移动端导航栏文字颜色 - 提高选择器优先级 */
     .navbar-collapse .navbar-nav > li > a,
     .navbar-inverse .navbar-nav > li > a,
-    .navbar-nav > li > a {
+    .navbar-nav > li > a,
+    body:not(.home) .navbar-collapse .navbar-nav > li > a, /* 添加这个选择器 */
+    body:not(.home) .navbar-inverse .navbar-nav > li > a,  /* 添加这个选择器 */
+    body:not(.home) .navbar-nav > li > a {                /* 添加这个选择器 */
         padding: 10px 15px !important;
         border-bottom: 1px solid #f0f0f0;
-        color: #7e7e7e !important; /* 深灰色文字 */
+        color: #7e7e7e !important; /* 确保深灰色文字生效 */
         font-weight: 700;
     }
     
@@ -2066,4 +2070,33 @@ body:not(.home) .navbar .navbar-brand {
 .search-button:active {
   transform: translateY(0);
   box-shadow: 0 2px 6px rgba(44, 62, 80, 0.2);
+}
+
+/* 移动端响应式调整 */
+@media (max-width: 768px) {
+  .search-container {
+    padding: 2.5rem 2rem; /* 添加左右内边距，避免内容贴边 */
+    padding-top: 2rem; /* 调整顶部内边距 */
+  }
+  
+  .search-input-container {
+    margin: 1.5rem 0; /* 减少移动端的上下边距 */
+    display: flex;
+    flex-direction: column; /* 改为垂直布局 */
+    gap: 12px; /* 控制搜索框和按钮之间的间距 */
+    align-items: center;
+  }
+  
+  .search-input {
+    max-width: 100%; /* 确保搜索框在移动端占满可用空间 */
+    font-size: 1.2rem; /* 稍微调整字体大小适应移动端 */
+    margin: 0; /* 移除默认边距 */
+  }
+  
+  .search-button {
+    margin-left: 0; /* 移除左侧边距，因为现在是垂直布局 */
+    max-width: 150px; /* 限制按钮最大宽度 */
+    font-size: 1.2rem; /* 调整按钮字体大小 */
+    padding: 0.7rem 1.5rem; /* 调整按钮内边距 */
+  }
 }

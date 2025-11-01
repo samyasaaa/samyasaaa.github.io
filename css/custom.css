@@ -20,12 +20,12 @@ body:not(.home) {
 }
 
 /* 导航栏文字颜色 */
-.navbar .navbar-nav > li > a {
+body:not(.home) .navbar .navbar-nav > li > a {
     color: #fff !important;
     font-weight: 600;
 }
 
-.navbar .navbar-brand {
+body:not(.home) .navbar .navbar-brand {
     color: #fff !important;
     font-weight: 600;
 }
@@ -72,6 +72,608 @@ body:not(.home) {
 
 }
 
+
+/* 首页样式 */
+.home-sections-container {
+    margin-top: 80px;
+}
+
+/* 第一行布局 */
+.home-row-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+/* 第二行布局 */
+.home-row-2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+}
+
+/* 卡片样式 - 添加悬浮效果 */
+.home-section-clean {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    margin-bottom: 0;
+}
+
+/* 带左侧竖线和下方分割线的标题栏 */
+.section-header-clean {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 15px 0;
+    background: transparent;
+    margin-bottom: 15px;
+    position: relative;
+    border-bottom: 1px solid #c6c5c5; /* 添加下方分割线 */
+}
+
+.section-header-clean h3 {
+    margin: 0;
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #2c3e50;
+    padding-left: 15px;
+    position: relative;
+}
+
+/* 左侧粗短竖线 */
+.section-header-clean h3::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: #5f6062;
+    border-radius: 2px;
+}
+
+.more-link-clean {
+    color: #666;
+    font-size: 0.9em;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.more-link-clean:hover {
+    color: #28706d;
+    text-decoration: underline;
+}
+
+/* 内容区域 */
+.section-content-clean {
+    padding: 0;
+}
+
+/* ==================== 新闻动态侧边图片样式 ==================== */
+
+.news-featured-side {
+    margin-bottom: 15px;
+}
+
+.news-featured-side-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.news-featured-side-image {
+    flex: 0 0 180px;
+    height: 130px;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.news-featured-side-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.news-featured-side:hover .news-featured-side-image img {
+    transform: scale(1.05);
+}
+
+.news-featured-side-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 70px;
+}
+
+.news-featured-side-title {
+    color: #2c3e50;
+    text-decoration: none;
+    font-size: 0.95em;
+    line-height: 1.4;
+    font-weight: 500;
+    margin-bottom: 5px;
+    transition: color 0.3s ease;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.news-featured-side-title:hover {
+    color: #28706d;
+    text-decoration: none;
+}
+
+.news-featured-side-description {
+    color: #828282;
+    font-size: 0.75em;
+    line-height: 1.5;
+    margin: 0 0 10px 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.news-featured-side-date {
+    color: #999;
+    font-size: 0.8em;
+    font-weight: 300;
+    align-self: flex-start;
+}
+/* 新闻和招聘项目样式 - 添加悬浮效果 */
+.news-item-clean, .recruitment-item-clean {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 12px;
+    padding: 12px 15px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+
+
+.news-item-clean:hover, .recruitment-item-clean:hover {
+    
+    border-color: #e9ecef;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.news-item-clean:last-child, .recruitment-item-clean:last-child {
+    margin-bottom: 0;
+}
+
+.news-title-clean, .recruitment-title-clean {
+    flex: 1;
+    color: #2c3e50;
+    text-decoration: none;
+    font-size: 0.95em;
+    line-height: 1.5;
+    margin-right: 15px;
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+.news-title-clean:hover, .recruitment-title-clean:hover {
+    color: #28706d;
+    text-decoration: none;
+}
+
+.news-date-clean, .recruitment-date-clean {
+    color: #999;
+    font-size: 0.85em;
+    white-space: nowrap;
+    font-weight: 300;
+}
+
+/* ==================== 招聘启事卡片样式 ==================== */
+
+.recruitment-card {
+    background: #ffffff;
+    border-radius: 6px;
+    /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); */
+    /* border: 1px solid #e8e8e8; */
+    margin-bottom: 12px;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.recruitment-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    transform: translateY(-2px);
+    border-color: #28706d;
+}
+
+.recruitment-card:last-child {
+    margin-bottom: 0;
+}
+
+.recruitment-card-content {
+    display: flex;
+    align-items: center;
+    padding: 12px 15px;
+}
+
+/* 日期列样式 */
+.recruitment-date-column {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    min-width: 60px;
+    margin-right: 12px;
+}
+
+.recruitment-month {
+    font-size: 1.0em;
+    color: #888;
+    margin-bottom: 2px;
+}
+
+.recruitment-day {
+    font-size: 1.0em;
+    font-weight: 700;
+    color: #28706d; /* 绿色 */
+}
+
+/* 竖线分隔符 */
+.recruitment-divider {
+    width: 1px;
+    height: 30px;
+    background: #e0e0e0;
+    margin-right: 12px;
+}
+
+/* 招聘标题样式 */
+.recruitment-title-clean {
+    flex: 1;
+    color: #2c3e50;
+    text-decoration: none;
+    font-size: 0.95em;
+    line-height: 1.5;
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+.recruitment-title-clean:hover {
+    color: #28706d;
+    text-decoration: none;
+}
+
+
+
+
+/* 风采展示美化样式 */
+.showcase-clean {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    overflow: visible;
+}
+
+.showcase-header-clean {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 15px 0;
+    background: transparent;
+    margin-bottom: 20px;
+    position: relative;
+    border-bottom: 1px solid #c6c5c5; /* 添加下方分割线 */
+}
+
+.showcase-header-clean h3 {
+    margin: 0;
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #2c3e50;
+    padding-left: 15px;
+    position: relative;
+}
+
+/* 风采展示标题左侧竖线 */
+.showcase-header-clean h3::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: #5f6062;
+    border-radius: 2px;
+}
+
+.organization-clean {
+    color: #666;
+    font-size: 0.9em;
+    font-weight: 400;
+}
+
+.showcase-content-clean {
+    padding: 0;
+}
+
+.showcase-grid-clean {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+/* 风采展示卡片悬浮效果 */
+.showcase-item-clean {
+    background: #fff;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.showcase-item-clean:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+    border-color: #28706d;
+}
+
+.showcase-item-clean a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.showcase-image-clean {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.showcase-item-clean:hover .showcase-image-clean {
+    transform: scale(1.05);
+}
+
+.showcase-title-clean {
+    font-size: 0.9em;
+    color: #2c3e50;
+    line-height: 1.4;
+    font-weight: 500;
+    padding: 12px 8px;
+    transition: color 0.3s ease;
+}
+
+.showcase-item-clean:hover .showcase-title-clean {
+    color: #28706d;
+}
+
+/* 无内容提示样式 */
+.no-content-clean {
+    color: #999;
+    font-style: italic;
+    text-align: center;
+    padding: 30px 0;
+    font-size: 0.9em;
+}
+
+/* 响应式设计 */
+@media (max-width: 992px) {
+    .home-row-1 {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .showcase-grid-clean {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .home-sections-container {
+        margin-top: 20px;
+    }
+    
+    .home-row-1,
+    .home-row-2 {
+        gap: 30px;
+    }
+    
+    .showcase-grid-clean {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .showcase-image-clean {
+        height: 160px;
+    }
+    
+    .section-header-clean,
+    .showcase-header-clean {
+        padding-bottom: 12px;
+        margin-bottom: 12px;
+    }
+    
+    .news-item-clean, .recruitment-item-clean {
+        padding: 10px 12px;
+    }
+}
+
+/* 占位图片样式 */
+.showcase-image-clean.placeholder {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    font-size: 0.8em;
+    font-weight: 500;
+}
+
+/* ==================== 招聘详情页样式 ==================== */
+
+.recruitment-single-container {
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+.recruitment-article {
+    background: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: none;
+}
+
+.recruitment-header {
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 20px;
+}
+
+.recruitment-title {
+    font-size: 2em;
+    font-weight: 500;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.recruitment-meta {
+    color: #666;
+    font-size: 0.9em;
+}
+
+.recruitment-meta span {
+    margin-right: 20px;
+}
+
+
+.recruitment-content {
+    line-height: 1.8;
+    font-size: 0.9em;
+    color: #444;
+    margin-bottom: 40px;
+}
+
+.recruitment-content h2 {
+    color: #2f3a46;
+    font-size: 1.2em;
+    border-bottom: none;
+    padding-bottom: 0;
+    margin: 30px 0 15px 0;
+    font-weight: 400;
+}
+
+.recruitment-content h3 {
+    color: #555;
+    margin: 25px 0 12px 0;
+    font-weight: 400;
+    font-size: 1.0em;
+}
+
+.recruitment-content p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.recruitment-content ul {
+    margin-bottom: 15px;
+    padding-left: 25px;
+}
+
+.recruitment-content li {
+    margin-bottom: 8px;
+}
+
+/* 申请方式和联系信息部分 */
+.application-section,
+.contact-section {
+    margin: 40px 0;
+    padding: 25px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #28706d;
+}
+
+.application-section h2,
+.contact-section h2 {
+    color: #2c3e50;
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.application-section h3,
+.contact-section h3 {
+    font-size: 1.1em;
+}
+
+.application-content,
+.contact-content {
+    line-height: 1.6;
+    color: #555;
+    font-size: 0.9em;
+}
+
+.application-content p,
+.contact-content p {
+    margin-bottom: 10px;
+}
+
+/* 返回链接 */
+.recruitment-footer {
+    margin-top: 40px;
+    text-align: center;
+    border-top: 1px solid #e0e0e0;
+    padding-top: 20px;
+}
+
+.back-to-recruitment {
+    color: #595a5a;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9em;
+    transition: color 0.3s ease;
+}
+
+.back-to-recruitment:hover {
+    color: #22346d;
+    text-decoration: none;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .recruitment-single-container {
+        margin-top: 20px;
+    }
+    
+    .recruitment-article {
+        padding: 20px 15px;
+    }
+    
+    .recruitment-title {
+        font-size: 1.6em;
+    }
+    
+    .recruitment-meta span {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+    
+    .application-section,
+    .contact-section {
+        padding: 20px;
+    }
+}
+
+
 /* 团队容器 */
 .team-container {
     display: flex;
@@ -101,14 +703,14 @@ body:not(.home) {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 30px;
-    margin-top: 20px;
+    row-gap: 5px;
+    margin-top: 40px;
 }
 
 /* 每个成员项 */
 .team-member {
     flex: 0 0 auto;
-    width: calc(33.333% - 30px);
+    width: calc(20% - 10px);
     min-width: 280px;
     max-width: 320px;
     display: flex;
@@ -136,8 +738,8 @@ body:not(.home) {
 }
 
 .member-avatar img {
-    width: 140px!important;
-    height: 140px!important;
+    width: 130px!important;
+    height: 130px!important;
     border-radius: 50%;
     border: none;
     object-fit: cover;
@@ -167,7 +769,7 @@ body:not(.home) {
 }
 
 .member-card h3 a:hover {
-    color: #40789f;
+    color: #28706d;
     text-decoration: none;
 }
 
@@ -402,7 +1004,7 @@ body:not(.home) {
 }
 
 .news-title a:hover {
-    color: #2a8857;
+    color: #28706d;
     text-decoration: none;
 }
 
@@ -1339,4 +1941,129 @@ body:not(.home) {
     .gallery-category-title {
         font-size: 1.5em;
     }
+}
+
+/* 搜索页面样式 */
+.search-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-top: 3rem;
+}
+
+.search-header {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+
+.search-stats {
+  color: #666;
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.search-results {
+  margin-top: 2rem;
+}
+
+.search-result-item {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.search-result-item:last-child {
+  border-bottom: none;
+}
+
+/* 确保没有其他元素添加额外的分割线 */
+.search-results hr,
+.search-results .divider,
+.search-results .news-divider {
+  display: none; /* 隐藏可能存在的额外分割线 */
+}
+
+.search-result-title {
+  margin-bottom: 0.75rem;
+}
+
+.search-result-title a {
+  color: #2c3e50;
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.search-result-title a:hover {
+  color: #3498db;
+}
+
+.search-result-meta {
+  color: #7f8c8d;
+  font-size: 1.0rem;
+  margin-bottom: 0.5rem;
+}
+
+.search-result-summary {
+  color: #555;
+  line-height: 1.6;
+}
+
+.search-highlight {
+  background-color: #fff3cd;
+  color: #856404;
+  padding: 0.1rem 0.2rem;
+  border-radius: 3px;
+  font-weight: 500;
+}
+
+.no-results {
+  text-align: center;
+  padding: 3rem;
+  color: #7f8c8d;
+}
+
+/* 搜索输入框样式 */
+.search-input-container {
+  margin: 2rem 0;
+}
+
+.search-input {
+  width: 100%;
+  max-width: 500px;
+  padding: 0.75rem 1rem;
+  font-size: 1.4rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 25px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.search-input:focus {
+  border-color: #3498db;
+}
+
+/* 搜索按钮美化 */
+.search-button {
+  padding: 0.75rem 2rem;
+  font-size: 1.4rem;
+  background: #969696;
+  border:none ;
+  color: white;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-left: 10px; /* 与输入框的间距 */
+  font-weight: 500;
+}
+
+.search-button:hover {
+  background: #006958;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(44, 62, 80, 0.2);
+}
+
+.search-button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(44, 62, 80, 0.2);
 }

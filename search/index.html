@@ -15,9 +15,9 @@
     
 
     
-    <meta name="title" content="" />
-    <meta property="og:title" content="" />
-    <meta property="twitter:title" content="" />
+    <meta name="title" content="搜索" />
+    <meta property="og:title" content="搜索" />
+    <meta property="twitter:title" content="搜索" />
     
 
     
@@ -26,19 +26,19 @@
     <meta property="twitter:description" content="这里是北京理工大学自动化学院智行实验室，欢迎前来交流。" />
     
 
-    <meta property="og:url" content="https://samyasaaa.github.io/categories/" />
+    <meta property="og:url" content="https://samyasaaa.github.io/search/" />
 
     
-    <meta property="twitter:card" content="summary" />
+    <meta property="twitter:card" content="搜索" />
     
     
 
     <meta name="keyword"  content="BIT, 北京理工大学, 北理工自动化学院,智行实验室 , SAGElab, 协同智能体通用探索实验室, BIT智行实验室, 实验室,Synergetic Agents for Generalized Exploration Lab">
     <link rel="shortcut icon" href="/img/favicon.ico">
 
-    <title>Categories | BIT智行实验室</title>
+    <title>搜索 | BIT智行实验室</title>
 
-    <link rel="canonical" href="/categories/">
+    <link rel="canonical" href="/search/">
 
     
 
@@ -168,76 +168,35 @@
 
 
 
-
-<article>
-    <div class="container">
-        <div class="row">
-            
-            <div class="
-                col-lg-8 col-lg-offset-2
-                col-md-10 col-md-offset-1
-                post-container">
-
-         	
-                
-
-
-
-
-<link href="https://xxx.xxx.com/dist/Artalk.css" rel="stylesheet" />
-<script src="https://xxx.xxx.com/dist/Artalk.js"></script>
-
-
-<div id="Comments"></div>
-
-<script>
-    Artalk.init({
-        el: '#Comments',
-        pageKey: 'https:\/\/samyasaaa.github.io\/categories\/',
-        pageTitle: 'Categories',
-        server: 'https:\/\/xxx.xxx.com',
-        site: 'xxx blog',
-    })
-</script>
-
-
-
+<div class="search-container">
+    <div class="search-header">
+        <h1>站内搜索</h1>
+        <form id="searchForm" class="search-form">
+            <div class="search-input-container">
+                <input type="text" id="searchInput" name="q" class="search-input" 
+                       placeholder="输入关键词搜索成员、论文、研究项目等内容..." autocomplete="off" 
+                       value="">
+                <button type="submit" class="search-button">搜索</button>
             </div>
+        </form>
+        <div class="search-stats" id="searchStats">
             
-            <div class="
-                col-lg-8 col-lg-offset-2
-                col-md-10 col-md-offset-1
-                sidebar-container">
-
-                
-                
-                <section>
-                    <hr class="hidden-sm hidden-xs">
-                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
-                    <div class="tags">
-                        
-                        
-                    </div>
-                </section>
-                
-
-                
-                
-                <section>
-                    <hr>
-                    <h5>FRIENDS</h5>
-                    <ul class="list-inline">
-                        
-                        <li><a target="_blank" href="https://zhaozhihan.com">Linda的博客</a></li>
-                        
-                    </ul>
-                </section>
-                
-            </div>
         </div>
     </div>
-</article>
 
+    <div class="search-results" id="searchResults">
+        
+            <p>请输入关键词开始搜索</p>
+        
+    </div>
+
+    <div class="no-results" id="noResults" style="display: none;">
+        <p>没有找到相关结果，请尝试其他关键词</p>
+    </div>
+</div>
+
+
+<script src="/js/search.js"></script>
 
 
 

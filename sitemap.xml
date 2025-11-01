@@ -2,8 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://samyasaaa.github.io/showcase/project1/</loc>
+    <lastmod>2024-01-15T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://samyasaaa.github.io/</loc>
-    <lastmod>2025-10-14T17:04:27+08:00</lastmod>
+    <lastmod>2025-10-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://samyasaaa.github.io/news/driving-competition---%E5%89%AF%E6%9C%AC---%E5%89%AF%E6%9C%AC---%E5%89%AF%E6%9C%AC/</loc>
+    <lastmod>2025-10-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://samyasaaa.github.io/news/driving-competition---%E5%89%AF%E6%9C%AC---%E5%89%AF%E6%9C%AC-3/</loc>
+    <lastmod>2025-10-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://samyasaaa.github.io/news/driving-competition---%E5%89%AF%E6%9C%AC---%E5%89%AF%E6%9C%AC/</loc>
+    <lastmod>2025-10-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://samyasaaa.github.io/news/driving-competition---%E5%89%AF%E6%9C%AC/</loc>
+    <lastmod>2025-10-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://samyasaaa.github.io/projects/</loc>
     <lastmod>2025-10-14T17:04:27+08:00</lastmod>
@@ -11,7 +26,13 @@
     <loc>https://samyasaaa.github.io/member/sss/</loc>
     <lastmod>2025-01-01T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://samyasaaa.github.io/member/w/</loc>
+    <lastmod>2025-01-01T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://samyasaaa.github.io/member/www/</loc>
+    <lastmod>2025-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://samyasaaa.github.io/member/%E4%B8%83/</loc>
     <lastmod>2025-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://samyasaaa.github.io/member/%E4%B8%83%E4%B8%83%E4%B8%83/</loc>
@@ -20,13 +41,19 @@
     <loc>https://samyasaaa.github.io/member/</loc>
     <lastmod>2025-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://samyasaaa.github.io/news/driving-competition---%E5%89%AF%E6%9C%AC/</loc>
-    <lastmod>2024-07-20T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://samyasaaa.github.io/news/driving-competition/</loc>
     <lastmod>2024-07-20T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://samyasaaa.github.io/showcase/</loc>
+    <lastmod>2024-01-15T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://samyasaaa.github.io/research/ai-vision-inspection-robot/</loc>
+    <lastmod>2024-01-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://samyasaaa.github.io/recruitment/doctor/</loc>
+    <lastmod>2024-01-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://samyasaaa.github.io/recruitment/</loc>
     <lastmod>2024-01-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://samyasaaa.github.io/research/</loc>
@@ -44,5 +71,7 @@
     <loc>https://samyasaaa.github.io/categories/</loc>
   </url><url>
     <loc>https://samyasaaa.github.io/tags/</loc>
+  </url><url>
+    <loc>https://samyasaaa.github.io/search/</loc>
   </url>
 </urlset>
